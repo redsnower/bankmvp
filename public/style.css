@@ -1,0 +1,8 @@
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f6fa;margin:0;padding:20px}
+.container{max-width:720px;margin:0 auto;background:#fff;padding:24px;border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,0.08)}
+h1{margin-top:0}
+label{display:block;margin:8px 0}
+input,select{padding:8px;margin-left:8px}
+button{padding:8px 12px;margin-top:8px}
+#accounts-list{list-style:none;padding-left:0}
+#msg{margin-top:8px;color:green}

@@ -1,0 +1,45 @@
+# bankmvp
+
+简易银行转账示例（MVP）
+
+功能:
+- 查询账户余额
+- 转账（含基本校验：余额、正数、不能给自己转账）
+- 前端页面简单直观
+
+账户示例：A001 (Alice), A002 (Bob), A003 (Charlie), A004 (Diana)
+
+运行
+
+1. 安装依赖：
+
+   npm install
+
+2. 运行服务：
+
+   npm start
+
+3. 访问：
+
+   http://localhost:8080
+
+测试
+
+运行：
+
+  npm test
+
+Docker
+
+项目包含 Dockerfile，可构建镜像并在 8080 暴露服务（在 CI 或本机 Docker 守护运行时）：
+
+  docker build -t bankmvp:latest .
+  docker run -p 8080:8080 bankmvp:latest
+
+部署到 Zeabur
+
+我可以使用你提供的 Zeabur API key 自动创建应用并部署（需要你确认要使用的应用名）。
+
+安全说明
+
+请不要把私有的 API key 或 `.env` 提交到仓库，本仓库已列出 `.gitignore` 忽略常见敏感文件。
